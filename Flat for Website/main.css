@@ -1,0 +1,107 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+
+#bgp{
+	background-image:url(image/road.png);
+	background-size:cover;
+}
+#bgc{
+	background-color:white;
+	padding:0px;
+	margin:100px auto;
+	width:400px;
+	height:500px;
+}
+#bg{
+	background-color:#7f8c8d;
+	padding:0px;
+	margin:100px auto;
+	width:400px;
+	height:250px;
+	
+}
+#pic{
+	display:block;
+	margin:0px auto;
+	padding-top:50px;
+}
+#tx1{
+	text-align:center;
+	margin:0px auto;
+	padding-top:25px;
+}
+#tx2{
+	text-align:center;
+	margin:0px auto;
+	padding-top:50px;
+}
+#guide{
+	background-color:#3498db;
+	position:fixed;
+    width:1365px;
+	height:60px;
+	 z-index: 10;
+}
+#guidenavh{
+	text-align:left;
+	padding:0px;
+	margin:10px;
+	float:left;
+}
+#guidenav{
+	text-align:right;
+	padding:0px;
+	margin:20px;
+	float:right;
+}
+#pipboy{
+	text-align:left;
+	position:absolute;
+    left:400px;
+    top:250px;
+}
+#word{
+	text-align:left;
+	position:absolute;
+    left:650px;
+    top:250px;
+}
+.par{
+	line-height:30px;
+}
+.par-color{
+	color:white;
+}
+.par-color:hover{
+	color:#2980b9;
+}
+.text{
+	text-align:center;
+}
+.bgcover{
+	background-color:#ecf0f5;
+	background-size:cover;
+}
+.pcover{
+    background-color:white;
+	width:1345px;
+	height:600px;
+}
+.pcover2{
+    background-color:#ecf0f5;
+	width:1345px;
+	height:800px;
+}
+.ul1{
+ list-style:none;
+ margin:0px;
+ display:inline-block;
+}  
+ .ul1 li{
+ padding-right:10px;
+ padding-left:10px;
+ float:left;    
+}
+
