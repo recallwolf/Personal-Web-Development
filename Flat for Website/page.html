@@ -5,21 +5,26 @@
 <title>PAGE</title>
 <link href="main.css" rel="stylesheet" type="text/css">
 <link href="font.css" rel="stylesheet" type="text/css">
+<link href="showpic.css" rel="stylesheet" type="text/css">
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="scroll.js"></script>
+<script src="animate.js"></script>
+<script src="showpic.js"></script>
 </head>
 <body class="bgcover">
 <div id="guide">
 <div id="guidenavh">
-<h1 class="par-color">RECALLWOLF</h1>
+<h1 class="par-colorc">RECALLWOLF</h1>
 </div>
 <div id="guidenav">
 <ul class="ul1">
-<li><a class="par-color">ABOUT</a></li>
-<li><a class="par-color">PROJECT</a></li>
-<li><a class="par-color">MEMORABILIA</a></li>
+<li><a href="#about" class="par-colorb par-color">ABOUT</a></li>
+<li><a href="#project" class="par-color">PROJECT</a></li>
+<li><a href="#memorabilia" class="par-color">MEMORABILIA</a></li>
 </ul>
 </div>
 </div>
-<div class="pcover">
+<div class="pcover move" id="about">
 <div id="pipboy">
 <img src="image/pipboy.png" width="150px" height="150px">
 </div>
@@ -31,9 +36,41 @@
 <p class="par">A blog that record my projects and my awesome moment</p>
 </div>
 </div>
-<div class="pcover2">
+<div class="pcover2 move" id="project">
+<div id="word2">
+<h1 class="text">Project</h1>
+<h2 class="text">March 20 2017</h2>
+<div class="text">
+<ul class="ul2">
+<li><a href="https://github.com/recallwolf/Personal-Web-Development" class="ah">Source Code</p></li>
+<li><a class="par">Year: 2017-3</a></li>
+<li><a class="par">Technology: HTML5 + CSS3 +js</a></li>
+</ul>
 </div>
-<div>
+</div>
+</div>
+<div class="pcover3 move" id="memorabilia">
+<div id="word3">
+<h1 class="text">Hello World!</h1>
+<div id="container">
+<div id="list" style="left: -720px;">
+<img src="image/witcher.jpg" width="720px" height="404px">
+<img src="image/bf1.jpg" width="720px" height="404px">
+<img src="image/me4.jpg" width="720px" height="404px">
+<img src="image/tesv.jpg" width="720px" height="404px">
+<img src="image/witcher.jpg" width="720px" height="404px">
+<img src="image/bf1.jpg" width="720px" height="404px">
+</div>
+<div id="buttons">
+<span index="1" class="on"></span>
+<span index="2"></span>
+<span index="3"></span>
+<span index="4"></span>
+</div>
+<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+<a href="javascript:;" id="next" class="arrow">&gt;</a>
+</div>
+</div>
 </div>
 </body>
 </html>
