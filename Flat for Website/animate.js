@@ -1,15 +1,15 @@
 $("document").ready(function(){
-	$(".ul1 a[href='#about']").click(function(){
+	$(".nav a[href='#about']").click(function(){
         $("html,body").animate({
-		scrollTop:$(".pcover").offset().top},1000);
+		scrollTop:$(".pcover").offset().top},800);
 	});
-	$(".ul1 a[href='#project']").click(function(){
+	$(".nav a[href='#project']").click(function(){
         $("html,body").animate({
-		scrollTop:$(".pcover2").offset().top},1000);
+		scrollTop:$(".pcover2").offset().top},800);
 	});
-	$(".ul1 a[href='#memorabilia']").click(function(){
+	$(".nav a[href='#memorabilia']").click(function(){
         $("html,body").animate({
-		scrollTop:$(".pcover3").offset().top},1000);
+		scrollTop:$(".pcover3").offset().top},800);
 	});
 });
 
