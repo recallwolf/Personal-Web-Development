@@ -4,7 +4,8 @@
 	font-weight:bold!important;
 }
 body{
-	padding-top:50px;
+	position:relative;
+	margin-top:50px;
 }
 a{
 	font-size:17px;
@@ -30,6 +31,10 @@ button{
 }
 ul li{
 	list-style:none;
+}
+.navbar-nav li.active a{
+	background-color:#3498db!important;
+	border-bottom:2px solid #ff2211;
 }
 .navbar-brand{
 	font-size:35px;
@@ -70,7 +75,7 @@ ul li{
 	height:560px;
 }
 .coversize{
-	padding-top:160px;
+	margin-top:200px;
 }
 .pcover2{
     background-color:#ecf0f5!important;
@@ -78,8 +83,7 @@ ul li{
 	height:400px;
 }
 .coversize2{
-	padding-top:50px;
-	padding-bottom:50px;
+	margin-top:50px;
 }
 .pcover3{
 	background-color:white;
@@ -87,7 +91,7 @@ ul li{
 	height:600px;
 }
 .coversize3{
-	padding-top:50px;
+	margin-top:50px;
 }
 .pcover4{
 	background-color:#ecf0f5;
@@ -100,4 +104,34 @@ ul li{
 }
 .coversize4{
 	padding-top:20px;
+}
+.slideanim{
+	visibility:hidden;
+} 
+.slide{
+    animation-name: slide;
+    -webkit-animation-name: slide; 
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes slide{
+0%{
+    opacity:0; 
+    -webkit-transform:translateY(70%);
+}
+100%{
+    opacity:1;   
+    -webkit-transform:translateY(0%);
+}
+}
+ @-webkit-keyframes slide {
+0%{
+   opacity:0;
+   -webkit-transform:translateY(70%);
+}
+100%{
+   opacity:1;
+   -webkit-transform:translateY(0%);
+}
 }

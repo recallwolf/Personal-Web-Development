@@ -1,76 +1,178 @@
-<!doctype html>
-<html>
-<meta charset="utf-8">
-<head>
-<title>PAGE</title>
-<link href="main.css" rel="stylesheet" type="text/css">
-<link href="font.css" rel="stylesheet" type="text/css">
-<link href="showpic.css" rel="stylesheet" type="text/css">
-<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script src="scroll.js"></script>
-<script src="animate.js"></script>
-<script src="showpic.js"></script>
-</head>
-<body class="bgcover">
-<div id="guide">
-<div id="guidenavh">
-<h1 class="par-colorc">RECALLWOLF</h1>
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page</title>
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="main.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><strong>RECALLWOLF</strong></a>
+    </div>
+	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about"><strong>ABOUT</strong></a></li>
+        <li><a href="#project"><strong>PROJECT</strong></a></li>
+		<li><a href="#memorabilia"><strong>MEMORABILIA</strong></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container pcover" id="about">
+<div class="row coversize">
+<div class="col-sm-3"></div>
+<div class="col-sm-3 text-center">
+<img src="image/pipboy.png" width="160px" height="160px">
 </div>
-<div id="guidenav">
-<ul class="ul1">
-<li><a href="#about" class="par-colorb par-color">ABOUT</a></li>
-<li><a href="#project" class="par-color">PROJECT</a></li>
-<li><a href="#memorabilia" class="par-color">MEMORABILIA</a></li>
-</ul>
-</div>
-</div>
-<div class="pcover move" id="about">
-<div id="pipboy">
-<img src="image/pipboy.png" width="150px" height="150px">
-</div>
-<div id="word">
+<div class="col-sm-4">
 <h1>DengShengHui</h1>
 <h2>Find An Interesting Place</h2>
-<p class="par">College student</p>
-<p class="par">ChangSha China</p>
-<p class="par">A blog that record my projects and my awesome moment</p>
-</div>
-</div>
-<div class="pcover2 move" id="project">
-<div id="word2">
-<h1 class="text">Project</h1>
-<h2 class="text">March 20 2017</h2>
-<div class="text">
-<ul class="ul2">
-<li><a href="https://github.com/recallwolf/Personal-Web-Development" class="ah">Source Code</p></li>
-<li><a class="par">Year: 2017-3</a></li>
-<li><a class="par">Technology: HTML5 + CSS3 +js</a></li>
-</ul>
+<p>College student</p>
+<p>ChangSha China</p>
+<p>A blog that record my projects and my awesome moment</p>
 </div>
 </div>
 </div>
-<div class="pcover3 move" id="memorabilia">
-<div id="word3">
-<h1 class="text">Hello World!</h1>
-<div id="container">
-<div id="list" style="left: -720px;">
-<img src="image/witcher.jpg" width="720px" height="404px">
-<img src="image/bf1.jpg" width="720px" height="404px">
-<img src="image/me4.jpg" width="720px" height="404px">
-<img src="image/tesv.jpg" width="720px" height="404px">
-<img src="image/witcher.jpg" width="720px" height="404px">
-<img src="image/bf1.jpg" width="720px" height="404px">
-</div>
-<div id="buttons">
-<span index="1" class="on"></span>
-<span index="2"></span>
-<span index="3"></span>
-<span index="4"></span>
-</div>
-<a href="javascript:;" id="prev" class="arrow">&lt;</a>
-<a href="javascript:;" id="next" class="arrow">&gt;</a>
+
+<div class="container pcover2" id="project">
+<div class="row coversize2 slideanim">
+<div class="col-sm-12 text-center">
+<h1>Project</h1>
+<h2>March 20 2017</h2>
+<a href="https://github.com/recallwolf/Personal-Web-Development">Source Code</a>
+<p>Year: 2017-3</p>
+<p>Technology: HTML5 + CSS3 +js/jQuery</p>
+<h2>April 13 2017</h2>
+<p>Add <a href="http://www.bootcss.com/">Bootstrap</a> framework</p>
+<p>Add responsive layout</p>
 </div>
 </div>
 </div>
-</body>
+
+<div class="container pcover3" id="memorabilia">
+<div class="row coversize3 slideanim">
+<div class="col-sm-12 text-center">
+<h1>Hello World!</h1>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="image/bf1.jpg" alt="...">
+      <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+      <img src="image/witcher.jpg" alt="...">
+      <div class="carousel-caption"></div>
+    </div>
+    <div class="item">
+      <img src="image/me4.jpg" alt="...">
+      <div class="carousel-caption"></div>
+    </div>
+	<div class="item">
+      <img src="image/tesv.jpg" alt="...">
+      <div class="carousel-caption"></div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+</div>
+</div>
+
+<a class="btn btn-primary" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+  Something Strange
+</a>
+<div class="collapse" id="collapseExample">
+<div class="container pcover4">
+<div class="row coversize4">
+<div class="col-sm-12 text-center">
+<p><strong>I am a noob</strong></p>
+<p><strong>I am learning something strange</strong></p>
+<p><strong>One day Python(Django) backstage will be add</strong></p>
+</div>
+</div>
+</div>
+</div>
+<hr>
+
+<div class="container">
+<div class="row">
+<div class="col-sm-12 text-center">
+<p><strong>© Deng Sheng Hui | 2017</strong></p>
+<p><strong>赣ICP备：</strong></p>
+</div>
+</div>
+</div>
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="animate.js"></script>
+	<script src="slide.js"></script>
+  </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
