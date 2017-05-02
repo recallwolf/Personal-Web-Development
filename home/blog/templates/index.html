@@ -222,30 +222,30 @@
 					$.ajaxSetup({  
 						data: {csrfmiddlewaretoken: '{{ csrf_token }}' },  
 					});  
-					if ($("#name").val()==""||$("#comments").val()==""){
-						$("#contact-form").valid( ); 
-					}
-					else{
-						$.ajax({
-							type:"POST",
-							url:"{% url 'blog:message' %}",
-							data: {
-							name: $("#name").val(),
-							email: $("#email").val(),
-							comments: $("#comments").val()
-						},
+						if ($("#name").val()==""||$("#comments").val()==""){
+							$("#contact-form").valid( ); 
+						}
+						else{
+							$.ajax({
+								type:"POST",
+								url:"{% url 'blog:message' %}",
+								data: {
+								name: $("#name").val(),
+								email: $("#email").val(),
+								comments: $("#comments").val()
+								},
 						
 						
-							success:function(){
-								$("#email").val("");
-								$("#comments").val("");
-								$("#message_re").text("Thanks for your message!");
-							},
-							error:function(){
-								$("#message_re").text("Oops.. something went wrong.");
-							},
-						});
-					}
+								success:function(){
+									$("#email").val("");
+									$("#comments").val("");
+									$("#message_re").text("Thanks for your message!");
+								},
+								error:function(){
+									$("#message_re").text("Oops.. something went wrong.");
+								},
+							});
+						}
 				});
 			});
 	</script>
