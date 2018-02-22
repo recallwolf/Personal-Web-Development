@@ -1,32 +1,21 @@
-# web-development
+# website
 
-### pip install
-```
-django===1.10.7     
-django-blog-zinnia===0.18.1 
-markdown  
-django-app-namespace-template-loader(替换主题组件)
-zinnia-theme-bootstrap(可选)
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
 
-### home/home/settings.py
-```
-INSTALLED_APPS = (
-    # 工程建立时默认添加的app
-    'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
-    'blog',
-    
-    # 项目添加的app
-    'django.contrib.sites',
-    'django_comments',
-    'mptt',
-    'tagging',
-    'zinnia_bootstrap',
-    'zinnia',
-)
-```
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
