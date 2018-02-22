@@ -4,7 +4,7 @@
 ```
 django===1.10.7     
 django-blog-zinnia===0.18.1 
-markdown```  
+markdown  
 django-app-namespace-template-loader(替换主题组件)
 zinnia-theme-bootstrap(可选)
 ```
