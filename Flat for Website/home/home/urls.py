@@ -18,7 +18,7 @@ import blog.views as bv
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^index/', include('blog.urls', namespace='blog')),
+    url(r'^index/', include('blog.urls', namespace = 'blog')),
     url(r'^$', bv.index),
     url(r'^weblog/', include('zinnia.urls')),
     url(r'^comments/', include('django_comments.urls')),

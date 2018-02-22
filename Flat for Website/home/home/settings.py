@@ -43,7 +43,7 @@ INSTALLED_APPS = (
     'django_comments',
     'mptt',
     'tagging',
-    'zinnia_foundation',
+    'zinnia_bootstrap',
     'zinnia',
 )
 
@@ -71,7 +71,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'zinnia.context_processors.version', 
+                'zinnia.context_processors.version',   
             ],
             'loaders': [
                'app_namespace.Loader',
@@ -115,3 +115,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
+
+
+ZINNIA_MARKUP_LANGUAGE = 'markdown'
+ZINNIA_MARKDOWN_EXTENSIONS = ['markdown.extensions.extra', 'markdown.extensions.codehilite']
