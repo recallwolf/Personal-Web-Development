@@ -9,6 +9,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
+const axios = require('axios')
 
 const HOST = process.env.HOST
 const PORT = process.env.PORT && Number(process.env.PORT)
@@ -22,6 +23,22 @@ const devWebpackConfig = merge(baseWebpackConfig, {
 
   // these devServer options should be customized in /config/index.js
   devServer: {
+    before(app) {
+      app.get('/api/weather', function(req, res) {
+        let wUrl = 'https://free-api.heweather.com/s6/weather/forecast'
+
+        axios.get(wUrl, {
+          params: {
+            location: req.query.ip,
+            key: 'b59cc2987db5483a8b851ffe9c36ae42',
+          }
+        }).then((response) => {
+          res.json(response.data)
+        }).catch((response) => {
+          console.log(response)
+        })
+      })
+    },
     clientLogLevel: 'warning',
     historyApiFallback: {
       rewrites: [
@@ -55,7 +72,8 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: 'index.html',
-      inject: true
+      inject: true,
+      favicon: './favicon.ico'
     }),
     // copy custom static assets
     new CopyWebpackPlugin([

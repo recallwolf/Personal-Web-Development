@@ -1,23 +1,25 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <cover></cover>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+  import Cover from 'components/cover/cover'
+  export default {
+    name: 'App',
+    components: {
+      Cover
+    }
+  }
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style type="text/ecmascript-6">
+  .app {
+    height: 100%;
+    width: 100%;
+  }
 </style>
+
+
+
