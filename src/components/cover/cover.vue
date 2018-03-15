@@ -13,7 +13,7 @@
           <div class="detail">
             <ul>
               <li class="today-text">{{todayWeather.state}}</li>
-              <li class="today-text">{{todayWeather.max}} ℃ ~ {{todayWeather.min}} ℃</li>
+              <li class="today-text">{{todayWeather.min}} ℃ ~ {{todayWeather.max}} ℃</li>
               <li class="today-text">{{todayWeather.wind_dir}}</li>
               <li class="today-text">风力：{{todayWeather.wind_sc}}级</li>
             </ul>
@@ -23,12 +23,12 @@
               <li class="extra-text">
                 <span class="extra-list">明天</span>
                 <span class="extra-list">{{secondWeather.state}}</span>
-                <span class="extra-list">{{secondWeather.max}} ℃ ~ {{secondWeather.min}} ℃</span>
+                <span class="extra-list">{{secondWeather.min}} ℃ ~ {{secondWeather.max}} ℃</span>
               </li>
               <li class="extra-text">
                 <span class="extra-list">后天</span>
                 <span class="extra-list">{{secondWeather.state}}</span>
-                <span class="extra-list">{{secondWeather.max}} ℃ ~ {{secondWeather.min}} ℃</span>
+                <span class="extra-list">{{secondWeather.min}} ℃ ~ {{secondWeather.max}} ℃</span>
               </li>
             </ul>
           </div>
@@ -36,12 +36,12 @@
       </transition>
     </div>
     <transition name="display">
-      <div class="outer-wrapper" v-show="showMenu">
+      <div class="outer-wrapper" v-show="showMenu" @click="menu">
         <ul>
-          <li class="outerNav-text" @click="menu"><router-link class="navto" to="/home">首页</router-link></li>
-          <li class="outerNav-text" @click="menu"><router-link class="navto" to="/state">状态</router-link></li>
-          <li class="outerNav-text" @click="menu"><router-link class="navto" to="/blog">博客</router-link></li>
-          <li class="outerNav-text" @click="menu"><router-link class="navto" to="/about">关于</router-link></li>
+          <li class="outerNav-text"><router-link class="navto" to="/home">首页</router-link></li>
+          <li class="outerNav-text"><router-link class="navto" to="/state">状态</router-link></li>
+          <li class="outerNav-text"><router-link class="navto" to="/blog">博客</router-link></li>
+          <li class="outerNav-text"><router-link class="navto" to="/about">关于</router-link></li>
         </ul>
       </div>
     </transition>
@@ -197,17 +197,15 @@
   }
   .outer-wrapper {
     position: absolute;
-    top: 44px;
     display: flex;
     align-items:center;
     justify-content: center;
-    position: absolute;
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
   }
   .outerNav-text {
-    height: 50px;
+    height: 70px;
     color: rgba(255, 255, 255, 0.7);
     font-size: 14px;
     font-weight: 550;
@@ -232,7 +230,7 @@
     transform: translateY(40px);
   }
   .display-enter-active, .display-leave-active {
-    transition: all 0.5s
+    transition: all 0.5s;
   }
   .display-enter, .display-leave-to {
     opacity: 0;

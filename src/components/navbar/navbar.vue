@@ -52,7 +52,7 @@
 <style scoped>
   @media screen and (max-width: 796px) {
     .nav-display {
-      display: none
+      display: none;
     }
     .btn-display {
       display: block!important;

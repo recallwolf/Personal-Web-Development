@@ -15,7 +15,7 @@
     display: flex;
     align-items:center;
     justify-content: center;
-     width: 80%;
+    width: 80%;
   }
   .text {
     font-family: 'Microsoft YaHei';
@@ -28,6 +28,6 @@
   }
   .fade-enter, .fade-leave-to {
     opacity: 0;
-    transform: translateY(60px);
+    transform: translateY(30px);
   }
 </style>

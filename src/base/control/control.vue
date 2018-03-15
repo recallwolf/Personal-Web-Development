@@ -16,7 +16,7 @@
       return {
         isEnlarge: false,
         isPlay: false,
-        src: "http://m10.music.126.net/20180310152454/c1ab6aa3793cd26d23d48cd1ab3c4aa7/ymusic/7288/be3a/8b70/803f8908a232833b84ff8f854e6b5eca.mp3"
+        src: "http://m10.music.126.net/20180315175502/6bc72b956d08367b52f23798c07a6b26/ymusic/58a4/f4dc/85cf/f8851ca2d1241ca26f4f12f7d976cd66.mp3"
       }
     },
     methods: {
@@ -72,7 +72,7 @@
 </script>
 
 <style scoped>
-  @media screen and (max-width: 796px) {
+  @media screen and (max-width: 1024px) {
     .button-setting {
       display: none
     }
