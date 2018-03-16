@@ -3,7 +3,7 @@
     <div class="nav-display">
       <ul>
         <li class="nav-img">
-          <img src="~common/image/avatar.jpg" width="36px" height="36px">
+          <img class="pic" src="~common/image/avatar.jpg">
         </li>
         <li class="nav-text"><router-link class="navto" to="/home">首页</router-link></li>
         <li class="nav-text"><router-link class="navto" to="/state">状态</router-link></li>
@@ -76,6 +76,14 @@
     padding-right: 25px;
     padding-left: 20px;
   }
+  .pic {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+  .pic:hover {
+    animation: rotate 4s infinite;
+  }
   .iconM {
     color: rgba(255, 255, 255, 0.7);
     font-size: 22px;
@@ -110,11 +118,19 @@
     text-decoration: none;
   }
   .active{
-      padding-bottom: 7px;
-      color: rgb(255, 255, 255);
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      border-bottom-color: rgb(240,20,20);
-  	}
+    padding-bottom: 7px;
+    color: rgb(255, 255, 255);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(240,20,20);
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 </style>
 

@@ -1,10 +1,21 @@
 <template>
   <div class="button">
     <ul>
-      <li class="button-setting" @click="play" v-show="!isPlay"><span class="icon-play icon"></span></li>
-      <li class="button-setting" @click="pause" v-show="isPlay"><span class="icon-pause icon"></span></li>
-      <li class="button-setting" @click="enlarge" v-show="!isEnlarge"><span class="icon-enlarge icon"></span></li>
-      <li class="button-setting" @click="shrink" v-show="isEnlarge"><span class="icon-shrink icon"></span></li>
+      <li class="button-icon" @click="play" v-show="!isPlay"><span class="icon-play icon"></span></li>
+      <li class="button-icon" @click="pause" v-show="isPlay"><span class="icon-pause icon"></span></li>
+      <li class="button-icon" @click="enlarge" v-show="!isEnlarge"><span class="icon-enlarge icon"></span></li>
+      <li class="button-icon" @click="shrink" v-show="isEnlarge"><span class="icon-shrink icon"></span></li>
+
+      <a href="https://weibo.com/1634414781/profile?rightmod=1&wvr=6&mod=personinfo">
+        <li class="button-setting">
+          <span class="icon-sina-weibo icon"></span>
+        </li>
+      </a>
+      <a href="http://steamcommunity.com/id/RecallWolf">
+        <li class="button-setting">
+          <span class="icon-steam icon"></span>
+        </li>
+      </a>
     </ul>
     <audio ref="audio" :src="src"></audio>
   </div>
@@ -73,8 +84,8 @@
 
 <style scoped>
   @media screen and (max-width: 1024px) {
-    .button-setting {
-      display: none
+    .button-icon {
+      display: none;
     }
   }
   .button {
@@ -82,9 +93,15 @@
     right: 10px;
     bottom: 22px;
   }
+  .button-icon {
+    float: left;
+    margin-right: 18px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.9);
+  }
   .button-setting {
     float: left;
-    padding-right: 18px;
+    margin-right: 18px;
     font-size: 24px;
     color: rgba(255, 255, 255, 0.9);
   }
