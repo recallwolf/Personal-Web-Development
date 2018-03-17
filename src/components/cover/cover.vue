@@ -4,6 +4,7 @@
       <navbar :location="location" @on="on" @off="off" @menu="menu"></navbar>
       <keep-alive><router-view/></keep-alive>
       <control></control>
+      <loading v-show="bgUrl === '' || location === '' "></loading>
       <transition name="fade">
         <div class="weather" v-show="showWeather"  @mouseover="on" @mouseout="off">
           <div class="title">
@@ -51,6 +52,7 @@
 <script type="text/ecmascript-6">
   import Navbar from 'components/navbar/navbar'
   import Control from 'base/control/control'
+  import Loading from 'base/loading/loading'
   import {getBgImage, getWeather, getIp} from 'api/api'
 
   export default {
@@ -129,7 +131,8 @@
     },
     components: {
       Navbar,
-      Control
+      Control,
+      Loading
     }
   }
 </script>

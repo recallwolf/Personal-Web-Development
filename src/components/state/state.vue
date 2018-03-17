@@ -1,16 +1,19 @@
 <template>
   <transition name="fade">
     <div class="state">
-      <timeline v-bind:timedata="timedata"></timeline>
-      <div class="img-pos">
-        <img class="pic" src="~common/image/city.png">
-      </div>
+      <scroll>
+        <timeline v-bind:timedata="timedata"></timeline>
+        <div class="img-pos">
+          <img class="pic" src="~common/image/city.png">
+        </div>
+      </scroll>
     </div>
   </transition>
 </template>
 
 <script  type="text/ecmascript-6">
   import Timeline from 'base/timeline/timeline'
+  import Scroll from 'base/scroll/scroll'
   
   export default {
     data() {
@@ -38,7 +41,8 @@
       }
     },
     components: {
-      Timeline
+      Timeline,
+      Scroll
     }
   }
 </script>
@@ -62,9 +66,9 @@
   }
   .img-pos {
     float: left;
-    position: relative;
+    position: absolute;
     top: 80px;
-    left: 70%;
+    left: 500px;
   }
   .pic {
     width: 593px; 

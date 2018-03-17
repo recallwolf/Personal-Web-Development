@@ -1,34 +1,40 @@
 <template>
   <transition name="fade">
     <div class="container">
-      <div class="row">
-        <div class="about">
-          <h1 class="title">欢迎来到recallwolf的小站</h1>
-          <p class="text">这是我的私人据点</p>
-          <p class="text">这个网站是为了展示我的兴趣爱好，同时也是我多年来的愿望</p>
+      <scroll>
+        <div class="row">
+          <div class="about">
+            <h1 class="title">欢迎来到recallwolf的小站</h1>
+            <p class="text">这是我的私人据点</p>
+            <p class="text">这个网站是为了展示我的兴趣爱好，同时也是我多年来的愿望</p>
+          </div>
+          <div class="about-part">
+            <h1 class="title">我喜欢编程</h1>
+            <p class="text">写代码是一件很好玩的事</p>
+            <p class="text">我现在在学习很多前端方面的内容，同时我也很想了解嵌入式和后端方面</p>
+          </div>
+          <div class="about-part">
+            <h1 class="title">我希望</h1>
+            <p class="text">丰子恺先生是我这一生最敬佩的人， 我想成为他那样的人， 我一直在努力</p>
+            <p class="text">不乱于心，不困于情，不畏将来，不念过往。如此。安好</p>
+            <p class="text">无愧于天，无愧于地，无怍于人，无惧于鬼。这样，人生</p>
+          </div>
         </div>
-        <div class="about-part">
-          <h1 class="title">我喜欢编程</h1>
-          <p class="text">写代码是一件很好玩的事</p>
-          <p class="text">我现在在学习很多前端方面的内容，同时我也很想了解嵌入式和后端方面</p>
+        <div class="img-pos">
+          <img width="416px" height="528px" src="~common/image/pic.jpg">
         </div>
-        <div class="about-part">
-          <h1 class="title">我希望</h1>
-          <p class="text">丰子恺先生是我这一生最敬佩的人， 我想成为他那样的人， 我一直在努力</p>
-          <p class="text">不乱于心，不困于情，不畏将来，不念过往。如此。安好</p>
-          <p class="text">无愧于天，无愧于地，无怍于人，无惧于鬼。这样，人生</p>
-        </div>
-      </div>
-      <div class="img-pos">
-        <img width="416px" height="528px" src="~common/image/pic.jpg">
-      </div>
+      </scroll>
     </div>
   </transition>
 </template>
 
 <script type="text/ecmascript-6">
+  import Scroll from 'base/scroll/scroll'
+
   export default {
-  
+    components: {
+      Scroll
+    }
   }
 </script>
 
