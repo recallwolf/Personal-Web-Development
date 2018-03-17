@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div class="state">
-      <scroll>
+      <scroll v-bind:data="data">
         <timeline v-bind:timedata="timedata"></timeline>
         <div class="img-pos">
           <img class="pic" src="~common/image/city.png">
@@ -18,6 +18,7 @@
   export default {
     data() {
       return {
+        data: 'state',
         timedata: [{
           year: 1997,
           text: '这一年我出生了'

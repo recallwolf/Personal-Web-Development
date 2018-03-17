@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div class="container">
-      <scroll>
+      <scroll v-bind:data="data">
         <div class="row">
           <div class="about">
             <h1 class="title">欢迎来到recallwolf的小站</h1>
@@ -32,6 +32,11 @@
   import Scroll from 'base/scroll/scroll'
 
   export default {
+    data() {
+      return {
+        data: 'about'
+      }
+    },
     components: {
       Scroll
     }
@@ -85,8 +90,8 @@
   }
   .img-pos {
     float: left;
-    position: relative;
-    left: 15%;
+    position: absolute;
+    left: 680px;
   }
   .fade-enter-active, .fade-leave-active {
     transition: all 1s;
