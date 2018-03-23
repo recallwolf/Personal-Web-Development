@@ -7,7 +7,7 @@
         </li>
         <li class="nav-text"><router-link class="navto" to="/home">首页</router-link></li>
         <li class="nav-text"><router-link class="navto" to="/state">状态</router-link></li>
-        <li class="nav-text"><router-link class="navto" to="/blog">博客</router-link></li>
+        <li class="nav-text"><a class="navto" href="/blog">博客</a></li>
         <li class="nav-text"><router-link class="navto" to="/about">关于</router-link></li>
       </ul>
     </div>

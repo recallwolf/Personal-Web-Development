@@ -27,7 +27,7 @@
       return {
         isEnlarge: false,
         isPlay: false,
-        src: "http://m10.music.126.net/20180315175502/6bc72b956d08367b52f23798c07a6b26/ymusic/58a4/f4dc/85cf/f8851ca2d1241ca26f4f12f7d976cd66.mp3"
+        src: "http://isure.stream.qqmusic.qq.com/C100004JhJ8C0GKLHz.m4a?fromtag=32"
       }
     },
     methods: {

@@ -28,8 +28,8 @@
               </li>
               <li class="extra-text">
                 <span class="extra-list">后天</span>
-                <span class="extra-list">{{secondWeather.state}}</span>
-                <span class="extra-list">{{secondWeather.min}} ℃ ~ {{secondWeather.max}} ℃</span>
+                <span class="extra-list">{{thirdWeather.state}}</span>
+                <span class="extra-list">{{thirdWeather.min}} ℃ ~ {{thirdWeather.max}} ℃</span>
               </li>
             </ul>
           </div>
@@ -41,7 +41,7 @@
         <ul>
           <li class="outerNav-text"><router-link class="navto" to="/home">首页</router-link></li>
           <li class="outerNav-text"><router-link class="navto" to="/state">状态</router-link></li>
-          <li class="outerNav-text"><router-link class="navto" to="/blog">博客</router-link></li>
+          <li class="outerNav-text"><a class="navto" href="/blog">博客</a></li>
           <li class="outerNav-text"><router-link class="navto" to="/about">关于</router-link></li>
         </ul>
       </div>
